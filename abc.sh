@@ -11,7 +11,7 @@ sudo apt install apache2 php libapache2-mod-php php-mysql mariadb-server unzip -
 sudo systemctl enable mariadb
 sudo systemctl start mariadb
 
-# Create secure MariaDB user and login DB
+# Create secure MariaDB user and login DBll
 echo "[+] Creating login_db and admin user..."
 HASHED_PASS=$(php -r "echo password_hash('qwerty123', PASSWORD_DEFAULT);")
 
